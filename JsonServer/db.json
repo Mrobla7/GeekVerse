@@ -1,0 +1,331 @@
+{
+  "libros": [
+    {
+      "id": 1,
+      "nombre": "Anhelo",
+      "categoria": "Fantasía",
+      "precio": 18.95,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/libros/anhelo.png",
+      "referencia": "L1"
+    },
+    {
+      "id": 2,
+      "nombre": "Ansia",
+      "categoria": "Fantasía",
+      "precio": 18.95,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/libros/ansia.png",
+      "referencia": "L2"
+    },
+    {
+      "id": 3,
+      "nombre": "Bad Ash",
+      "categoria": "Romance",
+      "precio": 16.5,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/libros/badAsh.png",
+      "referencia": "L3"
+    },
+    {
+      "id": 4,
+      "nombre": "Caraval",
+      "categoria": "Ficcion",
+      "precio": 15,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/libros/caraval.png",
+      "referencia": "L4"
+    },
+    {
+      "id": 5,
+      "nombre": "Cazadores de Sombras",
+      "categoria": "Accion",
+      "precio": 19.5,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/libros/cazadoresDeSombras.png",
+      "referencia": "L5"
+    },
+    {
+      "id": 6,
+      "nombre": "De Sangre y Cenizas",
+      "categoria": "Fantasía",
+      "precio": 19.5,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/libros/deSangreYCenizas.png",
+      "referencia": "L6"
+    }
+  ],
+  "funkos": [
+    {
+      "id": 1,
+      "nombre": "Aang",
+      "categoria": null,
+      "precio": 14,
+      "imagen": "/img/funkos/funkoAang.png",
+      "referencia": "F1"
+    },
+    {
+      "id": 2,
+      "nombre": "Ashe",
+      "categoria": null,
+      "precio": 15,
+      "imagen": "/img/funkos/funkoAshe.png",
+      "referencia": "F2"
+    },
+    {
+      "id": 3,
+      "nombre": "Clarke",
+      "categoria": null,
+      "precio": 18,
+      "imagen": "/img/funkos/funkoClarke.png",
+      "referencia": "F3"
+    },
+    {
+      "id": 4,
+      "nombre": "Jinx",
+      "categoria": null,
+      "precio": 15,
+      "imagen": "/img/funkos/funkoJinx.png",
+      "referencia": "F4"
+    },
+    {
+      "id": 5,
+      "nombre": "Jungkook",
+      "categoria": null,
+      "precio": 2,
+      "imagen": "/img/funkos/funkoJungkook.png",
+      "referencia": "F5"
+    },
+    {
+      "id": 6,
+      "nombre": "PajamaBob",
+      "categoria": null,
+      "precio": 19,
+      "imagen": "/img/funkos/funkoPajamaBob.png",
+      "referencia": "F6"
+    }
+  ],
+  "mangas": [
+    {
+      "id": 1,
+      "nombre": "AoT Vol. 1",
+      "categoria": "Mecha",
+      "precio": 10,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/mangas/ataqueALosTitanes1.jpg",
+      "referencia": "M1"
+    },
+    {
+      "id": 2,
+      "nombre": "AoT Vol. 2",
+      "categoria": "Mecha",
+      "precio": 10,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/mangas/ataqueALosTitanes3.jpg",
+      "referencia": "M2"
+    },
+    {
+      "id": 3,
+      "nombre": "Black Clover Vol. 1",
+      "categoria": "Shonen",
+      "precio": 6,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/mangas/blackClover1.jpg",
+      "referencia": "M3"
+    },
+    {
+      "id": 4,
+      "nombre": "Black Clover Vol. 6",
+      "categoria": "Shonen",
+      "precio": 6,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/mangas/blackClover6.jpg",
+      "referencia": "M4"
+    },
+    {
+      "id": 5,
+      "nombre": "Bleach Vol. 24",
+      "categoria": "Shonen",
+      "precio": 8,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/mangas/bleach24.jpg",
+      "referencia": "M5"
+    },
+    {
+      "id": 6,
+      "nombre": "Boku no Hero Vol. 1",
+      "categoria": "Shonen",
+      "precio": 7,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/mangas/bokuNoHero1.jpg",
+      "referencia": "M6"
+    }
+  ],
+  "videojuegos": [
+    {
+      "id": 1,
+      "nombre": "COD WWII",
+      "categoria": "Acción",
+      "precio": 49,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/videojuegos/calloffduty.jpg",
+      "referencia": "V1"
+    },
+    {
+      "id": 2,
+      "nombre": "Detroit",
+      "categoria": "Suspense",
+      "precio": 42,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/videojuegos/detroit.jpg",
+      "referencia": "V2"
+    },
+    {
+      "id": 3,
+      "nombre": "Dragon's Dogma",
+      "categoria": "Fantasía",
+      "precio": 28,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/videojuegos/dragonsDogma.jpg",
+      "referencia": "V3"
+    },
+    {
+      "id": 4,
+      "nombre": "Final Fantasy 7",
+      "categoria": "Fantasía",
+      "precio": 47,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/videojuegos/ff7.jpg",
+      "referencia": "V4"
+    },
+    {
+      "id": 5,
+      "nombre": "Final Fantasy 15",
+      "categoria": "Fantasía",
+      "precio": 59,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/videojuegos/final-fantasy-xv.jpg",
+      "referencia": "V5"
+    },
+    {
+      "id": 6,
+      "nombre": "Final Fantasy 10 y 10-2",
+      "categoria": "Fantasía",
+      "precio": 49,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/videojuegos/finalFantasyX.jpg",
+      "referencia": "V6"
+    }
+  ],
+  "comics": [
+    {
+      "id": 1,
+      "nombre": "Spiderman",
+      "categoria": "Marvel",
+      "precio": 6,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/comics/AmazingSpiderman.jpg",
+      "referencia": "C1"
+    },
+    {
+      "id": 2,
+      "nombre": "Avengers Vol. 1",
+      "categoria": "Marvel",
+      "precio": 6,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/comics/Avengers1.jpg",
+      "referencia": "C2"
+    },
+    {
+      "id": 3,
+      "nombre": "Batman VS Superman",
+      "categoria": "DC",
+      "precio": 6,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/comics/batmanVsSuperman.jpg",
+      "referencia": "C3"
+    },
+    {
+      "id": 4,
+      "nombre": "Capitana Marvel",
+      "categoria": "Marvel",
+      "precio": 6,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/comics/CapitanaMarvel.jpg",
+      "referencia": "C4"
+    },
+    {
+      "id": 5,
+      "nombre": "Capitan America Vol. 1",
+      "categoria": "Marvel",
+      "precio": 6,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/comics/CapitanaMarvel.jpg",
+      "referencia": "C5"
+    },
+    {
+      "id": 6,
+      "nombre": "Civil War Vol. 1",
+      "categoria": "Marvel",
+      "precio": 6,
+      "imagen": "C:/Users/ALUMNOS_FP/OneDrive - TuniverS Formación/DAW/DWEC/tema_5/GeekVerse/img/comics/CivilWar.jpg",
+      "referencia": "C6"
+    }
+  ],
+  "log": [
+    {
+      "id": 1,
+      "Username": "miguel",
+      "Pantalla": "carrito.html",
+      "DateHour": "21/03/2022 - 11:50",
+      "Accion": "Añadir al carrito"
+    },
+    {
+      "Username": "santi",
+      "Pantalla": "InicioSesion.html",
+      "DateHour": "2022-03-21T11:52:14.650Z",
+      "Accion": "Acceso sesión",
+      "id": 3
+    },
+    {
+      "Username": "nerea",
+      "Pantalla": "InicioSesion.html",
+      "DateHour": "2022-03-21T12:00:08.139Z",
+      "Accion": "Acceso sesión",
+      "id": 4
+    },
+    {
+      "Username": "miguel",
+      "Pantalla": "InicioSesion.html",
+      "DateHour": "2022-03-21T12:12:22.491Z",
+      "Accion": "Acceso sesión",
+      "id": 5
+    },
+    {
+      "Username": "miguel",
+      "Pantalla": "carrito.html",
+      "DateHour": "2022-03-21T12:12:50.352Z",
+      "Accion": "Comprar",
+      "id": 6
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombreUsuario": "miguel",
+      "passwd": "1234"
+    },
+    {
+      "nombreUsuario": "gines",
+      "passwd": "1234",
+      "id": 2
+    },
+    {
+      "nombreUsuario": "nerea",
+      "passwd": "1234",
+      "id": 3
+    },
+    {
+      "nombreUsuario": "santi",
+      "passwd": "1234",
+      "id": 4
+    }
+  ],
+  "carrito": [
+    {
+      "nombreUsuario": "santi",
+      "Referencia": "F2",
+      "cantidad": 1,
+      "id": 2
+    },
+    {
+      "nombreUsuario": "santi",
+      "Referencia": "F4",
+      "cantidad": 15,
+      "id": 3
+    },
+    {
+      "nombreUsuario": "manolo",
+      "Referencia": "F3",
+      "cantidad": 1,
+      "id": 10
+    }
+  ]
+}

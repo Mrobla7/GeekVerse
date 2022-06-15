@@ -1,0 +1,146 @@
+.filtro{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: auto;
+    height: 60px;
+    background-color: purple;
+    border-top: solid 2px #ff7847;
+}
+
+.filtro li{
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: ease 300ms;
+}
+
+.filtro li:hover{
+    transform: scale(0.9);
+    transition: ease 300ms;
+    background-color: #ff7847;
+    color: white;
+    z-index: 1;
+    color: purple;
+}
+
+.filtro li:active{
+    transform: scale(0.8);
+    transition: ease 50ms;
+}
+
+figcaption:last-child{
+    color: purple;
+}
+
+.catalogoContainer{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    background-color: #ff784766;
+}
+
+button{
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: purple;
+    border: 2px solid purple;
+    background-color: #ff784766;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease 300ms;
+}
+
+button:hover{
+    transform: scale(0.9);
+    transition: ease 300ms;
+    background-color: rgba(128, 0, 128, 0.507);
+    color: white;
+}
+
+button:active{
+    transform: scale(0.8);
+    transition: ease 50ms;
+    background-color: purple;
+}
+
+div figure.catalogo img {
+    width: 200px;
+    margin: 10px 10px;
+
+}
+div figure{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+div figure figcaption{
+    text-align: center;
+    font-weight: bold;
+}
+
+.catalogoContainer .catalogo img{
+    background: radial-gradient(closest-side, purple, rgba(128, 0, 128, 0));
+    
+}
+
+ul.menu, ul.minimenu{
+    display: none;
+}
+
+@media (max-width: 670px){
+    div figure.catalogo img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    ul.filtro{
+        display: none;
+    }
+    ul.menu{
+        display:contents;
+        text-align: center;
+        background-color: purple;
+    }
+    ul.menu li:hover > ul.minimenu{
+        display: initial;
+        padding:0;
+        margin:0;
+    }
+    ul.menu li.catg{
+        background-color: purple;
+        border-top: 2px #ff7847 solid;
+        padding: 20px 0px;
+    }
+    ul.menu li a{
+        text-decoration: none;
+        color: white;
+        cursor: default;
+    }
+    ul.minimenu li{
+        cursor: pointer;
+        transition: ease 100ms;
+    }
+    ul.minimenu li:first-of-type{
+        margin-top: 20px;
+    }
+    ul.minimenu li:hover{
+        transform: scale(0.9);
+        transition: ease 300ms;
+        background-color: #ff7847;
+        color: white;
+        z-index: 1;
+        color: purple;
+    }
+    
+    ul.minimenu li:active{
+        transform: scale(0.8);
+        transition: ease 50ms;
+    }
+}

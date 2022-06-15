@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: peachpuff;
+        }
+        section{
+            display: flex;
+            flex-flow: column;
+            padding: 30px;
+            margin: auto;
+            margin-top: 180px;
+            height: 300px;
+            width: 20%;
+            min-width: 230px;
+            background-color: purple;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+        }
+        span{
+            display: flex;
+            flex-flow: column;
+            font-size: 18px;
+            margin: auto;
+        }
+        input{
+            width:100%;
+            max-width: 180px;
+        }
+    </style>
+
+    <script>
+        function Comprobar(){
+            var xml = new XMLHttpRequest();
+            var url = "http://localhost:3001/usuarios";
+
+            xml.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    var listaUsuarios = JSON.parse(this.responseText);
+                    Registrar(listaUsuarios);
+                }
+            };
+
+            xml.open("GET", url, true);
+            xml.send();
+        }
+
+        function Registrar(arr){
+            var xml = new XMLHttpRequest();
+            var url = "http://localhost:3001/usuarios";
+            var nomUsu = document.getElementById("nombre").value;
+            var pass = document.getElementById("passwd").value;
+            var flag = false;
+
+            for(var i=0; i<Object.keys(arr).length; i++){
+                if(arr[i].nombreUsuario == nomUsu && flag == false){
+                    flag = true;
+                }
+            }
+
+            if(flag){
+                alert("nombre de usuario ya existente");
+            }
+            else{
+                xml.open("POST", url, true);
+                xml.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                xml.send(JSON.stringify({nombreUsuario: nomUsu, passwd: pass}));
+
+                alert("Cuenta registrada con éxito, volviendo a Iniciar Sesión");
+                window.location.replace("./InicioSesion.html");
+            } 
+        }
+    </script>
+
+</head>
+<body>
+    <section>
+        <h3>REGISTRARSE</h3>
+        <span>
+            <p>
+                Usuario:
+                <br>
+                <input type="text" id="nombre" placeholder="Nombre de usuario"/>
+                <br><br>
+                Contraseña:
+                <br>
+                <input type="password" id="passwd" placeholder="Contraseña"/>
+            </p>
+            <br>
+            <button type="button" onclick="Comprobar()">Registrarse</button>
+        </span>
+        <p>Si tienes cuenta inicia sesión <a href="/InicioSesion.html">Aquí</a></p>
+    </section>
+</body>
+</html>

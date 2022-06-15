@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekVerse - Videojuegos</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="catalogoMangasVideojuegosComics.css">
+    <script src="Filtro.js"></script>
+    <script src="guardarEnCarrito.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="logos/transparente.png"/>
+        </div>
+        <ul class="nav">
+            <li><a class="menuOpt" href="geekVerse.html">Inicio</a></li>
+            <li>
+                <a class="menuOpt" href="#">Catálogo</a>
+                <ul>
+                    <li><a class="menuOpt" href="catalogoFunkos.html">Funko Pops</a></li>
+                    <li><a class="menuOpt" href="catalogoMangas.html">Mangas</a></li>
+                    <li><a class="menuOpt" href="catalogoLibros.html">Libros</a></li>
+                    <li><a class="menuOpt" href="catalogoVideojuegos.html">Videojuegos</a></li>
+                    <li><a class="menuOpt" href="catalogoComics.html">Cómics</a></li>
+                </ul></li>
+            <li><a class="menuOpt" href="carrito.html">Carrito</a></li>
+            <li><a class="menuOpt" href="contacto.html">Contacto</a></li>
+            <li id="usuario" onclick="Salir()"></li>
+            <input type="checkbox" id="input">
+            <label for="input">
+                <div id="amborguesa" href="#">&#9776</div>
+            </label>
+            <ul class="menuBorger">
+                <li><a href="geekVerse.html">Inicio</a></li>
+                <li>
+                    <a href="#">Catálogo</a>
+                    <ul>
+                        <li><a href="catalogoFunkos.html">Funko Pops</a></li>
+                        <li><a href="catalogoMangas.html">Mangas</a></li>
+                        <li><a href="catalogoLibros.html">Libros</a></li>
+                        <li><a href="catalogoVideojuegos.html">Videojuegos</a></li>
+                        <li><a href="catalogoComics.html">Cómics</a></li>
+                    </ul>
+                </li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </ul>
+    </header>
+    <ul class="filtro">
+        <li class="menuOpt" onclick="filtrar('todos')">Todos</li>
+        <li class="menuOpt genero" onclick="filtrar('accion')">Acción</li>
+        <li class="fantasia menuOpt genero" onclick="filtrar('fantasia')">Fantasía</li>
+        <li class="indie menuOpt genero" onclick="filtrar('indie')">Indie</li>
+        <li class="suspense menuOpt genero" onclick="filtrar('suspense')">Suspense</li>
+        <li class="casual menuOpt genero" onclick="filtrar('casual')">Casual</li>
+    </ul>
+    <ul class="menu">
+        <li class="catg"><a href="#">Categorías</a>
+            <ul class="minimenu">
+                <li class="menuOpt" onclick="filtrar('todos')">Todos</li>
+                <li class="accion menuOpt" onclick="filtrar('accion')">Accion</li>
+                <li class="fantasia menuOpt" onclick="filtrar('fantasia')">Fantasia</li>
+                <li class="indie menuOpt" onclick="filtrar('indie')">Indie</li>
+                <li class="suspense menuOpt" onclick="filtrar('suspense')">Suspense</li>
+                <li class="casual menuOpt" onclick="filtrar('casual')">Casual</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="catalogoContainer">
+        <figure class="catalogo">
+            <img src="img/videojuegos/calloffduty.jpg" class="accion"/>
+            <figcaption>COD WWII</figcaption>
+            <figcaption>49€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/videojuegos/detroit.jpg" class="suspense"/>
+            <figcaption>Detroit</figcaption>
+            <figcaption>42€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/videojuegos/dragonsDogma.jpg" class="fantasia"/>
+            <figcaption>Dragon's Dogma</figcaption>
+            <figcaption>28€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/videojuegos/ff7.jpg" class="fantasia"/>
+            <figcaption>Final Fantasy 7</figcaption>
+            <figcaption>47€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/videojuegos/final-fantasy-xv.jpeg" class="fantasia"/>
+            <figcaption>Final Fantasy 15</figcaption>
+            <figcaption>59€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/videojuegos/finalFantasyX.jpg" class="fantasia"/>
+            <figcaption>Final Fantasy 10 y 10-2</figcaption>
+            <figcaption>49€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/videojuegos/hollowknight.jpg" class="indie"/>
+            <figcaption>Hollow Knight</figcaption>
+            <figcaption>19€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/videojuegos/noire.jpg" class="suspense"/>
+            <figcaption>L.A. Noire</figcaption>
+            <figcaption>27</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/videojuegos/sims4.jpg" class="casual"/>
+            <figcaption>The Sims 4</figcaption>
+            <figcaption>45€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/videojuegos/stardew.jpg" class="indie"/>
+            <figcaption>Stardew Valley</figcaption>
+            <figcaption>15€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/videojuegos/tombRaider.jpg" class="accion"/>
+            <figcaption>Tomb Raider</figcaption>
+            <figcaption>42€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/videojuegos/undertale.jpg" class="indie"/>
+            <figcaption>Undertale</figcaption>
+            <figcaption>12€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/videojuegos/untildawn.jpg" class="suspense"/>
+            <figcaption>Until Dawn</figcaption>
+            <figcaption>48€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+    </div>
+    <footer>
+        <div>
+            <img id="logo" src="logos/transparente.png"/>
+        </div>
+        <div>
+            <p><i>GeekVerse S.A.</i></p>
+            <p>C. San Juan Bosco, 38300</p>
+            <p>+34 699 046 023</p>
+        </div>
+        <div>
+            <img id="redes" src="img/fc.png"/>
+            <img id="redes" src="img/tw.png"/>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("usuario").innerHTML = sessionStorage.getItem("usuario");
+
+        function Salir(){
+            var salir = confirm("¿Estas seguro de salir?");
+            if(salir){
+                sessionStorage.removeItem("usuario");
+                document.getElementById("usuario").style.display = "none";
+                window.location.replace("./InicioSesion.html");
+            }
+        }
+    </script>
+</body>
+</html>

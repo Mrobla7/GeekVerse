@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekVerse</title>
+    <link rel="stylesheet" href="geekVerse.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="carrousel.css">
+    <script src="rickrolled.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="logos/transparente.png"/>
+        </div>
+        <ul class="nav">
+            <li><a class="menuOpt" href="geekVerse.html">Inicio</a></li>
+            <li>
+                <a class="menuOpt" href="#">Catálogo</a>
+                <ul>
+                    <li><a class="menuOpt" href="catalogoFunkos.html">Funko Pops</a></li>
+                    <li><a class="menuOpt" href="catalogoMangas.html">Mangas</a></li>
+                    <li><a class="menuOpt" href="catalogoLibros.html">Libros</a></li>
+                    <li><a class="menuOpt" href="catalogoVideojuegos.html">Videojuegos</a></li>
+                    <li><a class="menuOpt" href="catalogoComics.html">Cómics</a></li>
+                </ul></li>
+            <li><a class="menuOpt" href="carrito.html">Carrito</a></li>
+            <li><a class="menuOpt" href="contacto.html">Contacto</a></li>
+            <li id="usuario" onclick="Salir()"></li>
+            <li onclick="obtenerUsuarios()">Eliminar Cuenta</li>
+            <input type="checkbox" id="input">
+            <label for="input">
+                <div id="amborguesa" href="#">&#9776</div>
+            </label>
+            <ul class="menuBorger">
+                <li><a href="geekVerse.html">Inicio</a></li>
+                <li>
+                    <a href="#">Catálogo</a>
+                    <ul>
+                        <li><a href="catalogoFunkos.html">Funko Pops</a></li>
+                        <li><a href="catalogoMangas.html">Mangas</a></li>
+                        <li><a href="catalogoLibros.html">Libros</a></li>
+                        <li><a href="catalogoVideojuegos.html">Videojuegos</a></li>
+                        <li><a href="catalogoComics.html">Cómics</a></li>
+                    </ul>
+                </li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </ul>
+        
+    </header>
+    
+    <section>
+        <audio src="/img/jworld.mp3" autoplay loop></audio>
+        <div class="cont1">
+            <p>Catalogo</p>
+            <img class="imagen" src="img/funkos/funkoVi.png"/>
+            <img class="imagen" src="img/libros/furia.png"/>
+            <img class="imagen" src="img/videojuegos/detroit.jpg"/>
+            <img class="imagen" src="img/comics/AmazingSpiderman.jpg"/>
+            <img class="imagen" src="img/libros/caraval.png"/>
+        </div>
+        <div class="cont2">
+            
+            <div id="slider">
+                <figure>
+                    <img src="img/carrousel/funkos.jpg" alt="FunkoPops">
+                    <img src="img/carrousel/comics.jpg" alt="Comics">
+                    <img src="img/carrousel/mangas.png" alt="Manga">
+                    <img src="img/carrousel/libros.png" alt="Libros">
+                    <img src="img/carrousel/funkos.jpg" alt="FunkoPops">
+                    <!--Se repite la primera imagen en la ultima posicion para que cuando la animación comience de nuevo parezca una transición sin cortes-->
+                </figure>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aspernatur at recusandae fugit laboriosam dolorum veniam accusamus quod nihil ad dignissimos modi quas labore facilis? Quisquam nesciunt natus veritatis cumque quasi, voluptatum pariatur fugiat qui sint in et suscipit quas voluptatem molestiae quos ipsam expedita repellat minus tempore amet. Placeat ipsa numquam quo minus possimus cum, eos temporibus ab! Quidem?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore maiores explicabo odio vero harum ipsam placeat cumque, quis expedita unde ratione officiis obcaecati minus inventore porro veniam illo? Voluptate a necessitatibus accusantium doloribus cumque voluptas culpa repellendus tenetur totam sapiente at itaque incidunt ullam ipsa est, quaerat minima adipisci? Maxime facere aliquid quia harum qui earum laboriosam porro, sit distinctio velit voluptatibus, fugit autem hic doloribus perferendis quaerat magni rem deleniti tenetur voluptas aperiam alias? Perferendis labore eos, aperiam culpa temporibus facilis architecto expedita consequatur inventore quidem ipsum corrupti libero explicabo aliquam! Facere vel libero delectus repellat eveniet adipisci quaerat?</p>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sunt alias esse a eveniet facilis. Ut odit tenetur ipsum impedit quas laudantium! Eos cumque laboriosam ex animi repellat quibusdam quasi quisquam nihil necessitatibus odio cum iusto similique officiis, unde est! Qui accusamus molestiae saepe perspiciatis architecto nostrum ullam tempora! Quod?</p>
+            <br>
+            <details>
+                <summary>Más información</summary>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sunt alias esse a eveniet facilis. Ut odit tenetur ipsum impedit quas laudantium! Eos cumque laboriosam ex animi repellat quibusdam quasi quisquam nihil necessitatibus odio cum iusto similique officiis, unde est! Qui accusamus molestiae saepe perspiciatis architecto nostrum ullam tempora! Quod?</p>
+            </details>
+            <br>
+            <button onclick="troleo()">Contactanos aquí</button>
+            <dialog id="video">
+                <video id="innervideo" src="img/getrickrolled.mp4" controls></video>
+            </dialog>
+        </div>
+        <div class="cont3">
+            <p>Quienes somos</p>
+            <img class="imagen" src="img/mangas/bleach24.jpg"/>
+            <img class="imagen" src="img/libros/deSangreYCenizas.png"/>
+            <img class="imagen" src="img/videojuegos/ff7.jpg"/>
+            <img class="imagen" src="img/libros/anhelo.png"/>
+            <img class="imagen" src="img/funkos/funkoJinx.png"/>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <img id="logo" src="logos/transparente.png"/>
+        </div>
+        <div>
+            <p><i>GeekVerse S.A.</i></p>
+            <p>C. San Juan Bosco, 38300</p>
+            <p>+34 699 046 023</p>
+        </div>
+        <div>
+            <img id="redes" src="img/fc.png"/>
+            <img id="redes" src="img/tw.png"/>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("usuario").innerHTML = sessionStorage.getItem("usuario");
+
+        function Salir(){
+            var salir = confirm("¿Estas seguro de salir?");
+            if(salir){
+                sessionStorage.removeItem("usuario");
+                document.getElementById("usuario").style.display = "none";
+                window.location.replace("./InicioSesion.html");
+            }
+        }
+
+//**********PARA ELIMINAR LA CUENTA*************
+        var listaeliminarUsuarios;
+        var idUsuario;
+        function obtenerUsuarios() {
+            var json = new XMLHttpRequest();
+            var url = "http://localhost:3001/usuarios";
+            json.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    listaeliminarUsuarios = JSON.parse(this.responseText);
+                    listaeliminarUsuarios.forEach(element => {
+                        if (element.nombreUsuario == sessionStorage.getItem("usuario")) {
+                            idUsuario = element.id;
+                            borrarUsuario(idUsuario);
+                        }
+                    })
+                    alert("Usuario con ID: " + idUsuario + " borrado.");
+                }
+            };
+            json.open("GET", url, true);
+            json.send();
+        }
+        function borrarUsuario(idUsuario) {
+            var url = "http://localhost:3001/usuarios";
+            var json = new XMLHttpRequest();
+            json.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                }
+            };
+            json.open("DELETE", url + "/" + idUsuario, true);
+            json.send();
+        }
+//**************FIN DE ELIMINAR CUENTA****************
+    </script>
+</body>
+</html>

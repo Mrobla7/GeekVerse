@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Sobre nosotros</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="logos/transparente.png"/>
+        </div>
+        <ul class="nav">
+            <li><a class="menuOpt" href="geekVerse.html">Inicio</a></li>
+            <li>
+                <a class="menuOpt" href="#">Catálogo</a>
+                <ul>
+                    <li><a class="menuOpt" href="catalogoFunkos.html">Funko Pops</a></li>
+                    <li><a class="menuOpt" href="catalogoMangas.html">Mangas</a></li>
+                    <li><a class="menuOpt" href="catalogoLibros.html">Libros</a></li>
+                    <li><a class="menuOpt" href="catalogoVideojuegos.html">Videojuegos</a></li>
+                    <li><a class="menuOpt" href="catalogoComics.html">Cómics</a></li>
+                </ul></li>
+            <li><a class="menuOpt" href="carrito.html">Carrito</a></li>
+            <li><a class="menuOpt" href="contacto.html">Contacto</a></li>
+            <li id="usuario" onclick="Salir()"></li>
+            <input type="checkbox" id="input">
+            <label for="input">
+                <div id="amborguesa" href="#">&#9776</div>
+            </label>
+            <ul class="menuBorger">
+                <li><a href="geekVerse.html">Inicio</a></li>
+                <li>
+                    <a href="#">Catálogo</a>
+                    <ul>
+                        <li><a href="catalogoFunkos.html">Funko Pops</a></li>
+                        <li><a href="catalogoMangas.html">Mangas</a></li>
+                        <li><a href="catalogoLibros.html">Libros</a></li>
+                        <li><a href="catalogoVideojuegos.html">Videojuegos</a></li>
+                        <li><a href="catalogoComics.html">Cómics</a></li>
+                    </ul>
+                </li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </ul>
+    </header>
+    <section>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28078.802404279377!2d-16.5198957!3d28.3935891!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10a4b678b664f30f!2sLa%20Frikitienda!5e0!3m2!1ses!2ses!4v1643965779758!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div>
+            <h2>Contacto</h2>
+            <p>Teléfono: 985 800 856</p>
+            <p>E-mail: geekVerse_office@gmail.com</p>
+            <hr>
+            <h2>Horario</h2>
+            <p>Lunes: 9:00 - 13:00 / 16:00 - 20:00</p>
+            <p>Martes: 9:00 - 13:00 / 16:00 - 20:00</p>
+            <p>Miercoles: 10:00 - 13:00 / 16:00 - 18:00</p>
+            <p>Jueves: 9:00 - 13:00 / 16:00 - 20:00</p>
+            <p>Viernes: 9:00 - 13:00 / 16:00 - 20:00</p>
+            <p>Sábado: 10:00 - 13:00</p>
+            <p>Domingo: Cerrado</p>
+            <hr>
+            <h2>Más información</h2>
+            <p>Hacemos camisetas personalizadas</p>
+            <p>Vendemos figuras de colección (fuera de stock)</p>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <img id="logo" src="logos/transparente.png"/>
+        </div>
+        <div>
+            <p><i>GeekVerse S.A.</i></p>
+            <p>C. San Juan Bosco, 38300</p>
+            <p>+34 699 046 023</p>
+        </div>
+        <div>
+            <img id="redes" src="img/fc.png"/>
+            <img id="redes" src="img/tw.png"/>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("usuario").innerHTML = sessionStorage.getItem("usuario");
+
+        function Salir(){
+            var salir = confirm("¿Estas seguro de salir?");
+            if(salir){
+                sessionStorage.removeItem("usuario");
+                document.getElementById("usuario").style.display = "none";
+                window.location.replace("./InicioSesion.html");
+            }
+        }
+    </script>
+</body>
+</html>

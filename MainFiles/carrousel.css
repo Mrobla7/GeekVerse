@@ -1,0 +1,40 @@
+/*Evita que las imagenes sean visibles fuera de su div contenedor y define el tamaño de éste*/
+    div#slider { 
+        overflow: hidden; 
+        margin: 60px 0;
+        padding: 0;
+        border-radius: 10px;
+    }
+    /*Determina el tamaño de imagen, es necesario que el % del WIDTH sea inversamente proporcional al número de imágenes que tengamos en el carrousel*/
+    /*Para 5 imágenes un 20%, para 10 imagenes un 10%, para 20 un 5%, etc*/
+    div#slider figure img { 
+        width: 20%;
+        float: left;
+        height: 80%;
+        max-height: 400px;
+        border-radius: 10px;
+    }
+    div#slider figure { 
+        position: relative;
+        width: 500%;/*La anchura debe ser un porcentual equivalente a numImagenes*100 para que se muestren todas*/
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        border-radius: 10px;
+        animation: 20s slidy infinite; /*Define el intervalo de tiempo que se tardará en volver a la imagen inicial, se repite de forma indefinida*/
+    }/*"slidy" es una palabra clave para usar en una querie, actúa de variable cuyo valor variará entre diferentes porcentajes*/
+    
+    /*esta parte del código define la dirección y distancia de movimiento de las imágenes a la izquierda*/
+    /*Estos porcentajes deben ser proporcionales al número de imágenes que tenemos en el carrousel ((numImagenes*2)-1 es el numero de valores necesarios para el slidy)*/
+    @keyframes slidy {
+        0% { left: 0%; }
+        20% { left: 0%; }
+        25% { left: -100%; }
+        45% { left: -100%; }
+        50% { left: -200%; }
+        70% { left: -200%; }
+        75% { left: -300%; }
+        95% { left: -300%; }
+        100% { left: -400%; }
+    }

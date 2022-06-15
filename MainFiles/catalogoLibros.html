@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekVerse - Libros</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="catalogoLibrosFunkos.css">
+    <script src="Filtro.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="logos/transparente.png"/>
+        </div>
+        <ul class="nav">
+            <li><a class="menuOpt" href="geekVerse.html">Inicio</a></li>
+            <li>
+                <a class="menuOpt" href="#">Catálogo</a>
+                <ul>
+                    <li><a class="menuOpt" href="catalogoFunkos.html">Funko Pops</a></li>
+                    <li><a class="menuOpt" href="catalogoMangas.html">Mangas</a></li>
+                    <li><a class="menuOpt" href="catalogoLibros.html">Libros</a></li>
+                    <li><a class="menuOpt" href="catalogoVideojuegos.html">Videojuegos</a></li>
+                    <li><a class="menuOpt" href="catalogoComics.html">Cómics</a></li>
+                </ul></li>
+            <li><a class="menuOpt" href="carrito.html">Carrito</a></li>
+            <li><a class="menuOpt" href="contacto.html">Contacto</a></li>
+            <li id="usuario" onclick="Salir()"></li>
+            <input type="checkbox" id="input">
+            <label for="input">
+                <div id="amborguesa" href="#">&#9776</div>
+            </label>
+            <ul class="menuBorger">
+                <li><a href="geekVerse.html">Inicio</a></li>
+                <li>
+                    <a href="#">Catálogo</a>
+                    <ul>
+                        <li><a href="catalogoFunkos.html">Funko Pops</a></li>
+                        <li><a href="catalogoMangas.html">Mangas</a></li>
+                        <li><a href="catalogoLibros.html">Libros</a></li>
+                        <li><a href="catalogoVideojuegos.html">Videojuegos</a></li>
+                        <li><a href="catalogoComics.html">Cómics</a></li>
+                    </ul>
+                </li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </ul>
+    </header>
+    <ul class="filtro">
+        <li class="menuOpt" onclick="filtrar('todos')">Todos</li>
+        <li class="menuOpt" onclick="filtrar('fantasia')">Fantasia</li>
+        <li class="menuOpt" onclick="filtrar('romance')">Romance</li>
+        <li class="menuOpt" onclick="filtrar('suspense')">Suspense</li>
+        <li class="menuOpt" onclick="filtrar('ficcion')">Ficcion</li>
+        <li class="menuOpt" onclick="filtrar('accion')">Accion</li>
+    </ul>
+    <ul class="menu">
+        <li class="catg"><a href="#">Categorías</a>
+            <ul class="minimenu">
+                <li class="menuOpt" onclick="filtrar('todos')">Todos</li>
+                <li class="menuOpt" onclick="filtrar('fantasia')">Fantasia</li>
+                <li class="menuOpt" onclick="filtrar('romance')">Romance</li>
+                <li class="menuOpt" onclick="filtrar('suspense')">Suspense</li>
+                <li class="menuOpt" onclick="filtrar('ficcion')">Ficcion</li>
+                <li class="menuOpt" onclick="filtrar('accion')">Accion</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="catalogoContainer">
+        <figure class="catalogo">
+            <img src="img/libros/anhelo.png" class="fantasia"/>
+            <figcaption>Anhelo</figcaption>
+            <figcaption>18.95€</figcaption>
+            <figcaption><button id="L1">Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/ansia.png" class="fantasia"/>
+            <figcaption>Ansia</figcaption>
+            <figcaption>18.95€</figcaption>
+            <figcaption><button id="L2">Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/badAsh.png" class="romance"/>
+            <figcaption>Bad Ash</figcaption>
+            <figcaption>16.50€</figcaption>
+            <figcaption><button id="">Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/caraval.png" class="ficcion"/>
+            <figcaption>Caraval</figcaption>
+            <figcaption>15€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/cazadoresDeSombras.png" class="accion"/>
+            <figcaption>Cazadores de Sombras</figcaption>
+            <figcaption>19.50€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/deSangreYCenizas.png" class="fantasia"/>
+            <figcaption>De Sangre y Cenizas</figcaption>
+            <figcaption>19.50€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/elReinoDeLosMalditos.png" class="ficcion"/>
+            <figcaption>Reino de los Malditos</figcaption>
+            <figcaption>15€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/elValsDeLaBruja.png" class="suspense"/>
+            <figcaption>El Vals de la Bruja</figcaption>
+            <figcaption>16.50€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/fable.png" class="ficcion"/>
+            <figcaption>Fable</figcaption>
+            <figcaption>16.95€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/furia.png" class="fantasia"/>
+            <figcaption>Furia</figcaption>
+            <figcaption>18.95€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/laCariciaDeLaOscuridad.png" class="romance"/>
+            <figcaption>Caricia de Oscuridad</figcaption>
+            <figcaption>16.90€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/laCorona.png" class="romance"/>
+            <figcaption>La Corona</figcaption>
+            <figcaption>12€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/laReinaRoja.png" class="suspense"/>
+            <figcaption>La Reina Roja</figcaption>
+            <figcaption>16€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/lasBrujasDelAyerYDelMañana.png" class="fantasia"/>
+            <figcaption>Las Brujas del Ayer</figcaption>
+            <figcaption>14€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/laSeleccion.png" class="romance"/>
+            <figcaption>La Selección</figcaption>
+            <figcaption>12€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/percyJackson.png" class="accion"/>
+            <figcaption>Percy Jackson</figcaption>
+            <figcaption>16€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/saveMe.png" class="romance"/>
+            <figcaption>Save Me</figcaption>
+            <figcaption>13€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/saveUs.png" class="romance"/>
+            <figcaption>Save Us</figcaption>
+            <figcaption>13€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/saveYou.png" class="romance"/>
+            <figcaption>Save You</figcaption>
+            <figcaption>13€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/unaCorteDeRosasYEspinas.png" class="fantasia"/>
+            <figcaption>Una Corte de Rosas</figcaption>
+            <figcaption>18€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+        <figure class="catalogo">
+            <img src="img/libros/unaMaldicionOscuraYSolitaria.png" class="fantasia"/>
+            <figcaption>Una Maldición Oscura</figcaption>
+            <figcaption>19.50€</figcaption>
+            <figcaption><button>Comprar</button></figcaption>
+        </figure>
+    </div>
+    <footer>
+        <div>
+            <img id="logo" src="logos/transparente.png"/>
+        </div>
+        <div>
+            <p><i>GeekVerse S.A.</i></p>
+            <p>C. San Juan Bosco, 38300</p>
+            <p>+34 699 046 023</p>
+        </div>
+        <div>
+            <img id="redes" src="img/fc.png"/>
+            <img id="redes" src="img/tw.png"/>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("usuario").innerHTML = sessionStorage.getItem("usuario");
+
+        function Salir(){
+            var salir = confirm("¿Estas seguro de salir?");
+            if(salir){
+                sessionStorage.removeItem("usuario");
+                document.getElementById("usuario").style.display = "none";
+                window.location.replace("./InicioSesion.html");
+            }
+        }
+    </script>
+</body>
+</html>

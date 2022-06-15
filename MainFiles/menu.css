@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+
+body{
+    background-color: white;
+    padding: 0px 5%;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header, footer {
+    background-color: purple;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto;
+}
+
+#usuario{
+    color: #ff7847;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+#usuario:hover{
+    transform: scale(1);
+    background-color: #ff7847;
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#input{
+    display: none;
+}
+
+header div, header .nav {
+    display: flex;
+    align-items: center;
+}
+footer{
+    align-items: center;
+}
+footer div img{
+    width: 50px;
+}
+footer div p{
+    margin: 0;
+    color: #ff7847;
+}
+#logo{
+    height: 60px;
+    width: 100px;
+    padding-left: 20px;
+}
+
+.nav {
+    padding: 0;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    background-color: purple;
+    z-index: 1;
+    margin-top: 8px;
+    margin-left: 0;
+    padding: 0;
+}
+
+.nav li{
+    transition: ease 500ms;
+   
+}
+
+.nav li:hover{
+    transform: scale(0.9);
+    transition: ease 300ms;
+    background-color: rgba(128, 0, 128, 0.507);
+    color: white;
+    z-index: 1;
+}
+
+.nav li:active{
+    transform: scale(0.8);
+    transition: ease 50ms;
+}
+
+.nav li:nth-child(2):hover{
+    transform: scale(1);
+}
+.nav li:nth-child(2):active{
+    transform: scale(1);
+}
+.nav li ul li:nth-child(2):hover{
+    transform: scale(0.9);
+}
+.nav li ul li:nth-child(2):active{
+    transform: scale(0.8);
+}
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li:nth-child(1) {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.nav li ul li{
+    margin-bottom: 10px;
+}
+
+.menuOpt, div#amborguesa{
+    border-radius: 15px;
+    padding: 8px 28px;
+    margin: 0px 5px;
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+}
+.menuOpt:hover, div#amborguesa:hover{
+    background-color: #ff7847;
+    color: purple;
+}
+
+#amborguesa {
+    display: none;
+    cursor: pointer;
+}
+
+header ul.menuBorger{
+    display: none;
+}
+
+
+@media (max-width: 800px) and (min-width: 601px){
+    header{
+        flex-flow: column;
+        align-items: center;
+    }
+    header nav{
+        width: inherit;
+    }
+
+    #logo {
+        padding-left: 0;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        padding: 0;
+        min-width: 365px;
+    }
+    header{
+        flex-flow: row;
+        align-items: center;
+    }
+    header .menuOpt {
+        display: none;
+    }
+    #amborguesa {
+        display: initial;
+    }
+
+    ul.menuBorger{
+        display: block;
+        position: absolute;
+        width: 0px;
+        z-index: 2;
+        background-color: rgba(128, 0, 128, 0.808);
+        height: inherit;
+        border-bottom-left-radius: 10px; 
+    }
+    ul.menuBorger li{
+        display: block;
+        padding: 0px;
+        margin: 10px 0px;
+    }
+    ul.menuBorger li:hover{
+        background-color: rgba(128, 0, 128, 0.0);
+    }
+    ul.menuBorger a{
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+    ul.menuBorger li a:hover{
+        background-color: #ff7847;
+    }
+    #input:checked ~ ul.menuBorger{
+        display: block;
+        top: 80px;
+        right: 0px;
+        width: 160px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        margin-left: 0;
+    }
+    ul.menuBorger li ul{
+        display: block;
+        position: inherit;
+        margin: 20px;
+        background-color: rgba(128, 0, 128, 0.0);
+    }
+
+
+}

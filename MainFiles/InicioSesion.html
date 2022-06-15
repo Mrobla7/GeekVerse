@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="log.js"></script>
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: peachpuff;
+        }
+        section{
+            display: flex;
+            flex-flow: column;
+            padding: 30px;
+            margin: auto;
+            margin-top: 180px;
+            height: 300px;
+            width: 20%;
+            min-width: 200px;
+            background-color: purple;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+        }
+        section p:nth-child(3){
+            width: 100%;
+            text-align: center;
+        }
+        h3{
+            margin-top: 0;
+        }
+        span{
+            display: flex;
+            flex-flow: column;
+            font-size: 18px;
+            margin: auto;
+        }
+        input{
+            width:100%;
+            max-width: 180px;
+        }
+    </style>
+
+    <script>
+        function Comprobar(){
+            var xml = new XMLHttpRequest();
+            var url = "http://localhost:3001/usuarios";
+
+            xml.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    var listaUsuarios = JSON.parse(this.responseText);
+                    getUsuarios(listaUsuarios);
+                }
+            };
+
+            xml.open("GET", url, true);
+            xml.send();
+
+            function getUsuarios(arr){
+                var flag = false;
+                var nomUsu = document.getElementById("nombre").value;
+                var pass = document.getElementById("passwd").value;
+
+                for(var i=0; i<Object.keys(arr).length; i++){
+                    if(arr[i].nombreUsuario == nomUsu && arr[i].passwd == pass){
+                        flag = true;
+                    }
+                }
+
+                if(flag){
+                    sessionStorage.setItem("usuario",nomUsu);
+                    insertarLog("InicioSesion.html", "Acceso sesión");
+                    window.location.replace("./geekVerse.html");
+                }
+                else{
+                    alert("usuario no existe o es incorrecto.");
+                }
+            }
+
+
+        }
+    </script>
+
+</head>
+<body>
+    <section>
+        <h3>INICIAR SESIÓN</h3>
+        <span>
+            <p>
+                Usuario:
+                <br>
+                <input type="text" id="nombre" placeholder="Nombre de usuario"/>
+                <br><br>
+                Contraseña:
+                <br>
+                <input type="password" id="passwd" placeholder="Contraseña"/>
+            </p>
+            <br>
+            <button type="button" onclick="Comprobar()">Iniciar sesión</button>
+        </span>
+        <p>Registra una cuenta <a href="/Registrar.html">Aquí</a></p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekVerse - Ckeckout</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="carrito.css">
+    <script src="Eliminar.js"></script>
+    <script src="guardarEnCarrito.js"></script>
+    <script src="log.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="logos/transparente.png"/>
+        </div>
+        <ul class="nav">
+            <li><a class="menuOpt" href="geekVerse.html">Inicio</a></li>
+            <li>
+                <a class="menuOpt" href="#">Catálogo</a>
+                <ul>
+                    <li><a class="menuOpt" href="catalogoFunkos.html">Funko Pops</a></li>
+                    <li><a class="menuOpt" href="catalogoMangas.html">Mangas</a></li>
+                    <li><a class="menuOpt" href="catalogoLibros.html">Libros</a></li>
+                    <li><a class="menuOpt" href="catalogoVideojuegos.html">Videojuegos</a></li>
+                    <li><a class="menuOpt" href="catalogoComics.html">Cómics</a></li>
+                </ul></li>
+            <li><a class="menuOpt" href="carrito.html">Carrito</a></li>
+            <li><a class="menuOpt" href="contacto.html">Contacto</a></li>
+            <li id="usuario" onclick="Salir()"></li>
+            <input type="checkbox" id="input">
+            <label for="input">
+                <div id="amborguesa" href="#">&#9776</div>
+            </label>
+            <ul class="menuBorger">
+                <li><a href="geekVerse.html">Inicio</a></li>
+                <li>
+                    <a href="#">Catálogo</a>
+                    <ul>
+                        <li><a href="catalogoFunkos.html">Funko Pops</a></li>
+                        <li><a href="catalogoMangas.html">Mangas</a></li>
+                        <li><a href="catalogoLibros.html">Libros</a></li>
+                        <li><a href="catalogoVideojuegos.html">Videojuegos</a></li>
+                        <li><a href="catalogoComics.html">Cómics</a></li>
+                    </ul>
+                </li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </ul>
+    </header>
+
+    <form action="">
+        <h1>Realizar compra</h1>
+        <div id="datos">
+            <label for="">Cliente:
+                <input type="text" name="" id="" placeholder="Ingresa Nombre">
+            </label>
+            <label for="">Correo:
+                <input type="text" name="" id="" placeholder="Ingresa Correo">
+            </label>
+            <label for="">Dirección:
+                <input type="text" name="" id="" placeholder="Ingresa Direccion">
+            </label>
+        </div>
+        <hr>
+        <div id="contenedor">
+            
+        </div>
+        <div id="final">
+            <p id="cantidadfinal">Total: 0€</p>
+            <input type="button" onclick="obtenerCarrito()" value="Comprar"></input>
+            <li onclick="obtenerLog()">Mostrar LOG</li>
+        </div>
+    </form>
+    
+    <footer>
+        <div>
+            <img id="logo" src="logos/transparente.png"/>
+        </div>
+        <div>
+            <p><i>GeekVerse S.A.</i></p>
+            <p>C. San Juan Bosco, 38300</p>
+            <p>+34 699 046 023</p>
+        </div>
+        <div>
+            <img id="redes" src="img/fc.png"/>
+            <img id="redes" src="img/tw.png"/>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("usuario").innerHTML = sessionStorage.getItem("usuario");
+
+        function Salir(){
+            var salir = confirm("¿Estas seguro de salir?");
+            if(salir){
+                sessionStorage.removeItem("usuario");
+                document.getElementById("usuario").style.display = "none";
+                window.location.replace("./InicioSesion.html");
+            }
+        }
+    </script>
+</body>
+</html>
