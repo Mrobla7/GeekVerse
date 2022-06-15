@@ -7,6 +7,8 @@ A mockup shop for nerdy people, showcasing some basic features such as a "functi
     <li>Self-updating shopping cart (content based on selected products from catalog)</li>
     <li>Content loaded from, and saved to a .json file</li>
     <li>Use of NodeJS as a way to fetch data from .json files</li>
+    <li>Simple user managment mockup using the browser LocalStorage functionality</li>
+    <li>Responsive layout</li>
   </ul>
   
 Keep in mind, this is not a professional project, it is a personal project to explore and develop my knowledge on data fetching and update using vanilla JavaScript, as well as to create new CSS snippets for fancy buttons, menus and cadr lists.
